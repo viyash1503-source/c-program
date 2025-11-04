@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int n, lastDigit, exceptLast;
+    
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    lastDigit = n % 10;       
+    exceptLast = n / 10;      
+    
+    printf("Last digit: %d\n", lastDigit);
+    printf("All digits except last: %d\n", exceptLast);
+    
+    return 0;
+}
