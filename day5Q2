@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int choice;
+    float length, breadth, side, base, height, radius, area;
+
+    printf("Choose a shape to find area:\n");
+    printf("1. Rectangle\n");
+    printf("2. Square\n");
+    printf("3. Triangle\n");
+    printf("4. Circle\n");
+    printf("Enter your choice (1-4): ");
+    scanf("%d", &choice);
+
+    switch(choice) {
+        case 1:
+            printf("Enter length and breadth of rectangle: ");
+            scanf("%f %f", &length, &breadth);
+            area = length * breadth;
+            printf("Area of Rectangle = %.2f\n", area);
+            break;
+
+        case 2:
+            printf("Enter side of square: ");
+            scanf("%f
